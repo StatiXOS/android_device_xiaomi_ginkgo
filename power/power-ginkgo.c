@@ -63,10 +63,6 @@ static void process_video_encode_hfr_hint(void *metadata);
 int power_hint_override(power_hint_t hint, void *data)
 {
     switch(hint) {
-        case POWER_HINT_VSYNC:
-        {
-            break;
-        }
         case POWER_HINT_VIDEO_ENCODE:
         {
             process_video_encode_hint(data);
