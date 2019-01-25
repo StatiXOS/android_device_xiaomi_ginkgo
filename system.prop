@@ -67,9 +67,6 @@ ro.se.type=HCE,UICC
 ro.sensor.proximity=true
 ro.sensor.pickup=xiaomi.sensor.pickup
 
-# OEM Unlock
-ro.oem_unlock_supported=1
-
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
