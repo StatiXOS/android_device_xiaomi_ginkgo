@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI 20.7.1 China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI 20.7.3 China Beta package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1795,6 +1795,7 @@ vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal_proprietary.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.qti.hardware.vpp@1.3.so
@@ -1817,6 +1818,7 @@ vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal_proprietary.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
