@@ -454,6 +454,9 @@ VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/input/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
