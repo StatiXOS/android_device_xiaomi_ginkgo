@@ -67,6 +67,9 @@ ro.se.type=HCE,UICC
 ro.sensor.proximity=true
 ro.sensor.pickup=xiaomi.sensor.pickup
 
+# USAP
+persist.device_config.runtime_native.usap_pool_enabled=true
+
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
