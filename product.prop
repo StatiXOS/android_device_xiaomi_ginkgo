@@ -57,6 +57,9 @@ persist.radio.calls.on.ims=1
 # Hack for Youtube
 sys.display-size=3840x2160
 
+# USAP
+persist.device_config.runtime_native.usap_pool_enabled=true
+
 # Wireless display
 debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
