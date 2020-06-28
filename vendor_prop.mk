@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2020 Paranoid Android
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=8 \
@@ -88,7 +94,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio_hal.period_size=192 \
-    vendor.voice.path.for.pcm.voip=false \
+    vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -221,10 +227,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.mm.enable.prefetch=true \
     vendor.mm.enable.qcom_parser=63963135
 
-# NFC
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.se.type=HCE,UICC
-
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q6125-17995-1
@@ -234,6 +236,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0 \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent
+
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.se.type=HCE,UICC
 
 # PASR
 PRODUCT_PROPERTY_OVERRIDES += \

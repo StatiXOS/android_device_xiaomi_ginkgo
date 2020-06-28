@@ -197,6 +197,28 @@ on boot
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
 
+    #define back flash and front flash
+    chmod 0660 /sys/android_camera/sensor
+    chmod 0660 /sys/class/leds/led:flash_0/brightness
+    chmod 0660 /sys/class/leds/led:flash_1/brightness
+    chmod 0660 /sys/class/leds/led:flash_2/brightness
+    chmod 0660 /sys/class/leds/led:torch_0/brightness
+    chmod 0660 /sys/class/leds/led:torch_1/brightness
+    chmod 0660 /sys/class/leds/led:torch_2/brightness
+    chmod 0660 /sys/class/leds/led:switch_0/brightness
+    chmod 0660 /sys/class/leds/led:switch_1/brightness
+    chmod 0660 /sys/class/leds/flashlight/brightness
+    chown system system /sys/android_camera/sensor
+    chown system system /sys/class/leds/led:flash_0/brightness
+    chown system system /sys/class/leds/led:flash_1/brightness
+    chown system system /sys/class/leds/led:flash_2/brightness
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:torch_2/brightness
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chown system system /sys/class/leds/led:switch_1/brightness
+    chown system system /sys/class/leds/flashlight/brightness
+
 # D2TW
     chown system system /proc/tp_gesture
     chmod 0660 /proc/tp_gesture
@@ -298,6 +320,41 @@ service cdsprpcd /vendor/bin/cdsprpcd
    user system
    group system
 
+service nqnfcinfo /system/vendor/bin/nqnfcinfo
+    class late_start
+    group nfc
+    user system
+    oneshot
+    disabled
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+service nqnfc_1_2_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+service secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.0-service
+    override
+    class hal
+    interface android.hardware.secure_element@1.0::ISecureElement eSE1
+    user secure_element
+    group secure_element
+    disabled
+
+on property:ro.product.device=willow
+    enable nqnfcinfo
+    enable vendor.nfc_hal_service
+    enable nqnfc_1_2_hal_service
+    enable secure_element_hal_service
+
 on property:sys.thermallct.isincall=1
     write /sys/class/power_supply/battery/device/thermalcall 1
 
@@ -312,3 +369,13 @@ on property:sys.boot_completed=1
     write /sys/block/sde/queue/read_ahead_kb 128
     write /sys/block/sde/queue/nr_requests 128
     write /sys/block/sde/queue/iostats 0
+
+#add MIUI camera flag
+on property:sys.camera.miui.apk=*
+    setprop vendor.camera.miui.apk ${sys.camera.miui.apk}
+
+#add 720p@240fps video
+on  property:vendor.camera.cpuperf.en=1
+	write /dev/stune/foreground/schedtune.prefer_idle 1
+on  property:vendor.camera.cpuperf.en=0
+	write /dev/stune/foreground/schedtune.prefer_idle 0

@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo's MIUI 20.6.23 China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI 20.6.23 China Beta package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -20,6 +20,8 @@ vendor/lib64/libsns_registry_skel.so
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+vendor/lib/rfsa/adsp/libVC1Dec.so
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
@@ -27,10 +29,8 @@ vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/libVC1Dec.so
-vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
-vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 
 # Alarm
@@ -150,7 +150,7 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 
-# Bluetooth - aptX - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
+# Bluetooth - aptX - from coral-user 10 QQ3A.200605.001 6392402 release-keys
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
@@ -1377,6 +1377,7 @@ vendor/lib64/libcdsp_default_listener.so
 # Charger
 -bin/charger:bin/offlinecharger
 vendor/bin/hvdcp_opti
+vendor/bin/init.qti.chg_policy.sh
 vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
@@ -1537,7 +1538,7 @@ vendor/lib64/libcpion.so
 vendor/lib64/librmp.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
-# DRM - Widevine L1 - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
+# DRM - Widevine L1 - from laurel_sprout V11.0.15.0.QFQMIXM
 vendor/lib/liboemcrypto.so|822a8413aa5229e66b090113295f79d6839c004f
 vendor/lib64/liboemcrypto.so|14289b52bddd8d5ad100452c475cf4cbedca67cb
 
@@ -1626,7 +1627,6 @@ vendor/lib64/vendor.qti.gnss@3.0-service.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 
 # GPU firmware
-vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/a610_zap.b00
 vendor/firmware/a610_zap.b01
 vendor/firmware/a610_zap.b02
@@ -1634,16 +1634,13 @@ vendor/firmware/a610_zap.elf
 vendor/firmware/a610_zap.mdt
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
 vendor/firmware/focaltech_ts_fw_huaxing.bin
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
 vendor/firmware/novatek_ts_ebbg_fw.bin
 vendor/firmware/novatek_ts_ebbg_mp.bin
 vendor/firmware/novatek_ts_tianma_fw.bin
 vendor/firmware/novatek_ts_tianma_mp.bin
 
-# Graphics - from laurus-user 10 QKQ1.190910.002 20.6.17
+# Graphics - from laurus-user 10 QKQ1.190910.002 20.6.23
 vendor/lib64/egl/eglSubDriverAndroid.so|d7e3af7f2f08c6a6d311f32ce1dc6646e054bb26
 vendor/lib64/egl/libEGL_adreno.so|73c8bc42d4f097156508ad501b3affcd8bfb1e55
 vendor/lib64/egl/libGLESv1_CM_adreno.so|2c60e39e06eb18eac2db775021d5ed45da92fa54
@@ -1685,7 +1682,7 @@ vendor/lib/libpvr.so|b136124b70c996aedc269580088b15a86d8152bb
 vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
 vendor/lib/librs_adreno_sha1.so|be896c0fd4db3661ac33ced7f4a1dfa3b9cdd2a3
 
-# Graphics - QTI Mapper - from laurus-user 10 QKQ1.190910.002 20.6.17
+# Graphics - Gralloc-Mapper - from laurus-user 10 QKQ1.190910.002 20.6.23
 vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|8981bf6a014eff86006a55d41ba5239fa28c55a3
 vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|d823745e69ce1bd9a154c8320f5f97d5764f4fd9
 vendor/lib/libgrallocutils.so|9ec92f93fbcdc50146307c457e9ab9712bae0da8
@@ -1706,7 +1703,7 @@ vendor/lib64/libsdmextension.so|fc9994028e62ed31223b9a494c4bf4a469b855a9
 vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
 vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 
-# Graphics - Vulkan - from laurus-user 10 QKQ1.190910.002 20.6.17
+# Graphics - Vulkan - from laurus-user 10 QKQ1.190910.002 20.6.23
 vendor/lib/hw/vulkan.trinket.so|4a909668f446164113e8a709906100ae4cb79fd9
 vendor/lib64/hw/vulkan.trinket.so|4401c87f9cd3a8a4c5820b367679804967bd5722
 
@@ -1850,6 +1847,14 @@ vendor/lib64/libmlipay.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
+# Neural-networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
+vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc
+vendor/lib64/libhexagon_nn_stub.so
+vendor/lib64/unnhal-acc-adreno.so
+vendor/lib64/unnhal-acc-common.so
+vendor/lib64/unnhal-acc-hvx.so
+
 # NFC - from willow V11.0.9.0.PCXEUXM
 vendor/bin/nqnfcinfo|74e45f565d8be40a1377909b411465502dd366e7
 vendor/lib/libsn100u_fw.so|8f22d9b555acc25b501f1c48983e7d33547231f7
@@ -1870,14 +1875,6 @@ vendor/etc/sn100u_bootup.pnscr|ef641bf68ae831f38552bfeb1c54b3f20b2421f6
 vendor/etc/sn100u_pnx_sst.pnscr|4937e0750dd61933512442a7e06aff76b8b01f02
 vendor/etc/sn100u_pnx_ese_free.pnscr|2af6a512000e27f5eae5c7cbf43b77b75569a4e9
 vendor/libnfc-nxp_RF.conf|231f0999d00b5abcefc99d4ae39ecc6808e53904
-
-# Neural-networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
-vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc
-vendor/lib64/libhexagon_nn_stub.so
-vendor/lib64/unnhal-acc-adreno.so
-vendor/lib64/unnhal-acc-common.so
-vendor/lib64/unnhal-acc-hvx.so
 
 # PASR Manager
 -vendor/app/pasrservice/pasrservice.apk
