@@ -97,6 +97,9 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/fs/config.fs
 
