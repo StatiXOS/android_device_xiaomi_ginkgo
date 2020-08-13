@@ -353,18 +353,12 @@ PRODUCT_COPY_FILES += \
 
 TARGET_COMMON_QTI_COMPONENTS := perf av
 
-# QMI
+# QTI VNDK Framework Detect
 PRODUCT_PACKAGES += \
-    libjson \
+    libvndfwk_detect_jni.qti \
+    libqti_vndfwk_detect \
+    libvndfwk_detect_jni.qti.vendor \
     libqti_vndfwk_detect.vendor
-
-# Vendor SPL
-VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -402,6 +396,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio.config@1.1 \
     android.hardware.secure_element@1.0 \
+    libjson \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full
@@ -453,6 +448,14 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
+
+# Vendor SPL
+VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
 
 # Wifi
 PRODUCT_PACKAGES += \
