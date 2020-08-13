@@ -10,8 +10,7 @@ $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pa
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
@@ -77,8 +76,10 @@ BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
-    antradio_app \
-    libantradio
+    com.dsi.ant.antradio_library
+
+PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Atrace
 PRODUCT_PACKAGES += \
@@ -146,9 +147,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
-
-PRODUCT_BOOT_JARS += \
-    qcom.fmradio
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -250,6 +248,9 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # NFC
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/nxp/opensource/sn100x
+
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.nxp.nfc.nq \
@@ -276,10 +277,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
-# ParanoidDoze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
 
 # Parts
 PRODUCT_PACKAGES += \
@@ -436,10 +433,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
 
 # Wifi
 PRODUCT_PACKAGES += \
