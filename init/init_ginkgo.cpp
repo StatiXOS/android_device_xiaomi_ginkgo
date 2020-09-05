@@ -65,6 +65,9 @@ void vendor_load_properties()
         property_override(string("ro.") + prop + string("build.fingerprint"), fp);
     }
 
+    // Set hardware revision
+    property_override("ro.boot.hardware.revision", hwversion);
+
     // Set hardware SKU prop
     property_override("ro.boot.product.hardware.sku", device);
 
