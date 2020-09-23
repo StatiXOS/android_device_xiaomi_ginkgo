@@ -96,11 +96,6 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
-# Context Hub
-PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-impl.generic \
-    android.hardware.contexthub@1.0-service
-
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
@@ -397,10 +392,6 @@ PRODUCT_PACKAGES += \
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
-
-# Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_xiaomi
 
 # RIL
 PRODUCT_PACKAGES += \
