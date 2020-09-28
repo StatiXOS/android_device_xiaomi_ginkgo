@@ -1360,10 +1360,12 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libcdsp_default_listener.so
 
 # Charger
-bin/charger
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/charger_fstab.qti
+
+# Charger daemon - from miui_CMI_20.9.28_171a6c0851_11.0
+bin/charger|c745c3febb01b2b6a868a30ddb7bd8c1c343b3e7
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
