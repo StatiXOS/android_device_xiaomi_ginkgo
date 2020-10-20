@@ -140,9 +140,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/ginkgo
 TARGET_KERNEL_CONFIG := vendor/ginkgo-perf_defconfig
 
-# Keystore
-TARGET_PROVIDES_KEYMASTER := true
-
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
