@@ -95,8 +95,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor
 
-$(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
-
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
