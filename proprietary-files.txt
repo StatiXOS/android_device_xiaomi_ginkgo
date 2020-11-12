@@ -1987,6 +1987,9 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
+# QTI Telephony - from LA.UM.9.11.r1-02100-NICOBAR.0
+-system_ext/framework/qti-telephony-common.jar|56bf0fb1a089ffe372d22f8aa1c7cdef866d92e1
+
 # Radio
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
 -product/app/atfwd/atfwd.apk
