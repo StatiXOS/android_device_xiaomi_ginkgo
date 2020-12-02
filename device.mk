@@ -124,7 +124,16 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libvulkan \
     memtrack.trinket \
-    vendor.qti.hardware.display.allocator-service
+
+# Display interfaces
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.allocator@1.0.vendor \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer@1.0.vendor \
+    vendor.qti.hardware.display.composer@2.0.vendor \
+    vendor.qti.hardware.display.mapper@1.0.vendor \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor
 
 # Doze
 PRODUCT_PACKAGES += \
