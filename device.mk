@@ -12,10 +12,6 @@ $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay \
-    NotchBarKiller
-
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -306,6 +302,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_willow/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_willow/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_willow/android.hardware.nfc.uicc.xml
+
+# Notch Overlays
+TARGET_HAS_NOTCH := true
 
 # Optimize
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
