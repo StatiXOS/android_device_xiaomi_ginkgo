@@ -363,7 +363,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # Power
-$(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti
 
 # VNDK
 PRODUCT_PACKAGES += \
