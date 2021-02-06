@@ -237,10 +237,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# IRSC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/irsc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
@@ -412,9 +408,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     fstab.qcom
 
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/init/,$(TARGET_COPY_OUT_VENDOR)/etc/init)
-
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
@@ -441,9 +434,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Telephony
 PRODUCT_PACKAGES += \
