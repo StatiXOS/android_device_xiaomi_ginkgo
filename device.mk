@@ -402,9 +402,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0 \
-    libxml2 \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    librmnetctl \
+    libxml2
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
