@@ -6,6 +6,12 @@
         "remote":       "statix"
     },
     {
+        "repository":   "ArrowOS-Devices/android_vendor_miuicamera",
+        "target_path":  "vendor/miuicamera",
+        "branch":       "arrow-11.0-a3",
+        "remote":       "github"
+    },
+    {
         "repository":   "android_vendor_xiaomi",
         "target_path":  "vendor/xiaomi",
         "branch":       "11",

@@ -104,8 +104,9 @@ PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
 # Camera
+$(call inherit-product, vendor/miuicamera/config.mk)
+
 PRODUCT_PACKAGES += \
-    Camera2 \
     android.frameworks.displayservice@1.0 \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.device@3.5 \
