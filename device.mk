@@ -16,7 +16,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    kernel/xiaomi/ginkgo
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
