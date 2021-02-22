@@ -3149,8 +3149,8 @@ case "$target" in
             # Setting b.L scheduler parameters
             echo 67 > /proc/sys/kernel/sched_downmigrate
             echo 77 > /proc/sys/kernel/sched_upmigrate
-            echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
-            echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
+            echo 85 > /proc/sys/kernel/sched_group_downmigrate
+            echo 100 > /proc/sys/kernel/sched_group_upmigrate
 
             # cpuset settings
             echo 0-2     > /dev/cpuset/background/cpus
