@@ -2084,15 +2084,6 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb489
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|a0603a5c46e8e67f78bdb42f2b246ecc6a37cecd
 
-# Radio - EMBMS - from LA.UM.9.11.r1-03200-NICOBAR.0
-vendor/bin/embmsslServer|4a79e6becf59d6eff5a499c21dded1e2bc82762f
-vendor/etc/init/init.embmssl_server.rc|e2f59e5d6223112bdcfbf9e9e69fe6abea3698b1
-vendor/lib64/libembmsservice.so|db4576464c544530b83a3dc17dfaa38af6cf3cb3
-vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|c7723a934596433511b48d8e24da0afb49c37e76
-vendor/lib64/vendor.qti.hardware.embmssl@1.0.so|b07738cf7722495bbe635c5cc00adc5e2cb179c4
-vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so|fbdd42fd97e302c4058ac4be4134382aee48ce52
-vendor/lib64/vendor.qti.hardware.embmssl@1.1.so|ac751795797777b9f2844a6ac4fd9055fa4e98f3
-
 # Radio - IMS - from LA.UM.9.11.r1-03200-NICOBAR.0
 -vendor/app/IWlanService/IWlanService.apk|695b3fa7e70f6079cf7e90144fcb79591dff38d0
 vendor/bin/ims_rtp_daemon|353b680f0f492626116ea7bcdceb49e0bd303705
