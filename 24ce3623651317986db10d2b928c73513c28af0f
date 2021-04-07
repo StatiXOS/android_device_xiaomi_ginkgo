@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03bee5bb_8bc963cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-04-07T04:33:39Z",
+      "side": 1,
+      "message": "prese",
+      "revId": "24ce3623651317986db10d2b928c73513c28af0f",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "480aad26_adc9e8a0",
+        "filename": "extract-files.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-04-07T04:33:39Z",
+      "side": 1,
+      "message": "preserve this",
+      "revId": "24ce3623651317986db10d2b928c73513c28af0f",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}
