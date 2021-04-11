@@ -33,6 +33,24 @@
       "message": "preserve this",
       "revId": "24ce3623651317986db10d2b928c73513c28af0f",
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05af489d_30edc133",
+        "filename": "extract-files.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2021-04-11T01:22:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "480aad26_adc9e8a0",
+      "revId": "24ce3623651317986db10d2b928c73513c28af0f",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     }
   ]
 }
