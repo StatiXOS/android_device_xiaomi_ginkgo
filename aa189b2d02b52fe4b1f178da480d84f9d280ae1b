@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3861f85_c1dc2844",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000013
+      },
+      "writtenOn": "2021-04-19T06:48:36Z",
+      "side": 1,
+      "message": "works fine for me, makefiles were properly editted.",
+      "revId": "aa189b2d02b52fe4b1f178da480d84f9d280ae1b",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}
