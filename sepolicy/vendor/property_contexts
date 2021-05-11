@@ -22,3 +22,6 @@ sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
 # Thermal
 sys.thermal.                u:object_r:thermal_engine_prop:s0
 persist.sys.thermal.        u:object_r:thermal_engine_prop:s0
+
+# Wifi Display 
+persist.vendor.setWFDInfo.  u:object_r:vendor_wfd_sys_debug_prop:s0
