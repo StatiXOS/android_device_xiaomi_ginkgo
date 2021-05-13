@@ -16,11 +16,18 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Xiaomi Parts -->
+    <string name="device_settings_title">Xiaomi Parts</string>
+    <string name="device_settings_summary">Configurações extra</string>
+    <string name="audio_title">Áudio</string>
+    <string name="display_title">Display</string>
+
     <!-- Dirac settings -->
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_summary">Otimizar qualidade de áudio</string>
     <string name="dirac_headset_title">Escolher tipo de fone de ouvido</string>
     <string name="dirac_preset_title">Escolha uma predefinição</string>
+
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Padrão</string>
     <string name="dirac_headset_earbuds">Mi Earbuds</string>
@@ -44,6 +51,7 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
+
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">Padrão</string>
     <string name="dirac_preset_rock">Rock</string>
@@ -56,4 +64,29 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Aumentador de graves</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Limpar auto-falantes</string>
+    <string name="clear_speaker_summary">Reproduz um áudio de 30s para limpar o auto-falante</string>
+    <string name="clear_speaker_description">Use essa ferramenta uma ou duas vezes se acha que seu alto-falante está levemente obstruído por poeira. Coloque o volume de mídia no máximo.\n\nSe o alto-falante estiver muito obstruído, utilize essa ferramenta de 2 a 5 vezes enquanto balança seu aparelho com o alto-falante apontado para baixo.</string>
+
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Calibração de coresdo display</string>
+    <string name="kcal_settings_summary">Ajusta as cores do seu display utilizando KCAL</string>
+    <string name="kcal_enable_title">Ativar configuração de cores do display</string>
+    <string name="kcal_enable_summary">Ativa a configuração de cores do display para um ajuste personalizado</string>
+    <string name="kcal_not_supported">Configurações de cores do display não é suportado pelo kernel</string>
+    <string name="red_slider_title">Vermelho</string>
+    <string name="green_slider_title">Verde</string>
+    <string name="blue_slider_title">Azul</string>    
+    <string name="kcal_calibration_preference_category_title">Calibração de cores</string>
+    <string name="saturation_slider_title">Saturação</string>
+    <string name="reset_default_button_title">Resetar para as configurações padrão</string>
+    <string name="reset_default_button_summary">Reseta todas as configurações dessa tela</string>
+    <string name="contrast_slider_title">Contraste</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Controle de vibração</string>
+    <string name="vibration_strength_title">Força</string>
 </resources>
