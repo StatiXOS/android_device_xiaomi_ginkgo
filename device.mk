@@ -300,6 +300,9 @@ TARGET_HAS_NOTCH := true
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/parts/init.xiaomiparts.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.xiaomiparts.rc
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
