@@ -1998,6 +1998,7 @@ vendor/lib/libqmiservices.so|ed6785cccaa6e01be1af7e7a8c8d696eeb78e05f
 
 # Radio - from LA.UM.9.11.r1-04500-NICOBAR.0
 etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
+etc/sysconfig/qti_whitelist.xml|36d11f2735fcd9ad3ac5639f3c0bb011941b8335
 vendor/bin/ATFWD-daemon|0646e296cdc04a5fd755d6a5a8fceb2cd9fa48ad
 vendor/bin/adpl|a7ef739a68cffa6269cf215f0c21de11cd33f8fc
 vendor/bin/hw/qcrild|b593e369985cebb4235066363e77f861eb46662f
