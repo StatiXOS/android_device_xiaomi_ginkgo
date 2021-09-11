@@ -106,5 +106,5 @@
     <string name="lcd_hbm_high">High</string>
     <string name="lcd_cabc_low">Low (UI)</string>
     <string name="lcd_cabc_medium">Medium (Videos)</string>
-    <string name="lcd_cabc_high">High (Images</string>
+    <string name="lcd_cabc_high">High (Images)</string>
 </resources>

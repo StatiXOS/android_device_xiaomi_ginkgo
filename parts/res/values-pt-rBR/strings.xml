@@ -69,10 +69,10 @@
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Limpar auto-falantes</string>
     <string name="clear_speaker_summary">Reproduz um áudio de 30s para limpar o auto-falante</string>
-    <string name="clear_speaker_description">Use essa ferramenta uma ou duas vezes se acha que seu alto-falante está levemente obstruído por poeira. Coloque o volume de mídia no máximo.\n\nSe o alto-falante estiver muito obstruído, utilize essa ferramenta de 2 a 5 vezes enquanto balança seu aparelho com o alto-falante apontado para baixo.</string>
+    <string name="clear_speaker_description">Use essa ferramenta uma ou duas vezes se acha que seu alto-falante está levemente obstruído por poeira. Coloque o volume de mídia no máximo.\n\nSe o alto-falante estiver muito obstruído, utilize essa ferramenta de 2 a 5 vezes enquanto balança seu aparelho com o alto-falante apontado para baixo.\n\nCUIDADO: Confira se qualquer headphone está desplugado.</string>
 
     <!-- Kcal settings -->
-    <string name="kcal_settings_title">Calibração de coresdo display</string>
+    <string name="kcal_settings_title">Calibração de cores do display</string>
     <string name="kcal_settings_summary">Ajusta as cores do seu display utilizando KCAL</string>
     <string name="kcal_enable_title">Ativar configuração de cores do display</string>
     <string name="kcal_enable_summary">Ativa a configuração de cores do display para um ajuste personalizado</string>
@@ -89,4 +89,19 @@
     <!-- Vibration -->
     <string name="vibration_title">Controle de vibração</string>
     <string name="vibration_strength_title">Força</string>
+
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Recursos do LCD</string>
+    <string name="lcd_features_summary">High Brightness Mode, CABC</string>
+    <string name="lcd_hbm_title">High Brightness Mode (HBM)</string>
+    <string name="lcd_hbm_tile_title">HBM</string>
+    <string name="lcd_cabc_title">Modo CABC</string>
+    <string name="lcd_features_info">High Brightness Mode (HBM) aumenta o brilho máximo da tela para melhorar visibilidade sob a luz do sol. Aumenta o consumo de bateria.\n\nCABC (Content Adaptive Backlight Control) ajusta o display e o brilho da luz de fundo baseado no conteúdo exibido atualmente, para reduzir consumo de bateria sem degradação.</string>
+    <string name="lcd_hbm_cabc_off">Desativado</string>
+    <string name="lcd_hbm_low">Baixo</string>
+    <string name="lcd_hbm_medium">Médio</string>
+    <string name="lcd_hbm_high">Alto</string>
+    <string name="lcd_cabc_low">Baixo (UI)</string>
+    <string name="lcd_cabc_medium">Médio (Vídeos)</string>
+    <string name="lcd_cabc_high">Alto (Imagens)</string>
 </resources>
